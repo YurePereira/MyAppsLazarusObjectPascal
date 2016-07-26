@@ -6,15 +6,16 @@ interface
 
 uses
   Classes, SysUtils, IBConnection, sqldb, FileUtil, Forms, Controls, Graphics,
-  Dialogs, StdCtrls, DBGrids;
+  Dialogs, StdCtrls, DBGrids, ComCtrls;
 
 type
 
   { TForm1 }
 
   TForm1 = class(TForm)
-    BtnOpen: TButton;
     DBGrid1: TDBGrid;
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
     procedure BtnOpenClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure IBConnection1AfterConnect(Sender: TObject);

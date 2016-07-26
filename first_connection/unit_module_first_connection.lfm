@@ -1,8 +1,8 @@
 object mdCliente: TmdCliente
   OldCreateOrder = False
   Height = 160
-  HorizontalOffset = 288
-  VerticalOffset = 156
+  HorizontalOffset = 824
+  VerticalOffset = 126
   Width = 321
   object dbCliente: TIBConnection
     Connected = True
