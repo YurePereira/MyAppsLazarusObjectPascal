@@ -1,0 +1,58 @@
+object FrmYourFullName: TFrmYourFullName
+  Left = 252
+  Height = 170
+  Top = 107
+  Width = 310
+  Caption = 'Your Full Name'
+  ClientHeight = 170
+  ClientWidth = 310
+  LCLVersion = '1.6.0.4'
+  object BtnShowFullName: TButton
+    Left = 32
+    Height = 25
+    Top = 120
+    Width = 112
+    Caption = 'Show Full Name'
+    OnClick = BtnShowFullNameClick
+    TabOrder = 0
+  end
+  object LbName: TLabel
+    Left = 32
+    Height = 15
+    Top = 24
+    Width = 38
+    Caption = 'Name: '
+    ParentColor = False
+  end
+  object LbLastName: TLabel
+    Left = 32
+    Height = 15
+    Top = 64
+    Width = 59
+    Caption = 'Last Name:'
+    ParentColor = False
+  end
+  object TxtName: TEdit
+    Left = 104
+    Height = 23
+    Top = 24
+    Width = 168
+    TabOrder = 1
+  end
+  object TxtLastName: TEdit
+    Left = 104
+    Height = 23
+    Top = 64
+    Width = 168
+    TabOrder = 2
+  end
+  object BtnExit: TButton
+    Left = 152
+    Height = 25
+    Top = 120
+    Width = 120
+    Caption = 'Exit'
+    OnClick = BtnExitClick
+    TabOrder = 3
+  end
+end

@@ -1,0 +1,76 @@
+object FrmCalculatingSpeed: TFrmCalculatingSpeed
+  Left = 262
+  Height = 239
+  Top = 154
+  Width = 429
+  Caption = 'Calculating Speed'
+  ClientHeight = 239
+  ClientWidth = 429
+  LCLVersion = '1.6.0.4'
+  object BtnCalc: TButton
+    Left = 16
+    Height = 25
+    Top = 192
+    Width = 75
+    Caption = 'Calculate'
+    OnClick = BtnCalcClick
+    TabOrder = 0
+  end
+  object TxtaResult: TMemo
+    Left = 16
+    Height = 106
+    Top = 72
+    Width = 400
+    OnChange = TxtaResultChange
+    ScrollBars = ssAutoVertical
+    TabOrder = 1
+  end
+  object LbKm: TLabel
+    Left = 16
+    Height = 15
+    Top = 32
+    Width = 21
+    Caption = 'Km:'
+    ParentColor = False
+  end
+  object TxtKm: TEdit
+    Left = 56
+    Height = 23
+    Top = 32
+    Width = 136
+    TabOrder = 2
+  end
+  object LbTime: TLabel
+    Left = 208
+    Height = 15
+    Top = 32
+    Width = 46
+    Caption = 'Minutes:'
+    ParentColor = False
+  end
+  object TxtMinutes: TEdit
+    Left = 272
+    Height = 23
+    Top = 32
+    Width = 144
+    TabOrder = 3
+  end
+  object BtnClean: TButton
+    Left = 96
+    Height = 25
+    Top = 192
+    Width = 75
+    Caption = 'Clean'
+    OnClick = BtnCleanClick
+    TabOrder = 4
+  end
+  object BtnExit: TButton
+    Left = 176
+    Height = 25
+    Top = 192
+    Width = 75
+    Caption = 'Exit'
+    OnClick = BtnExitClick
+    TabOrder = 5
+  end
+end

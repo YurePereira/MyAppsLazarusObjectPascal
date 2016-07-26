@@ -1,0 +1,57 @@
+object FrmSoma: TFrmSoma
+  Left = 246
+  Height = 200
+  Top = 105
+  Width = 342
+  Caption = 'Soma'
+  ClientHeight = 200
+  ClientWidth = 342
+  LCLVersion = '1.6.0.4'
+  object BtnCalc: TButton
+    Left = 24
+    Height = 25
+    Top = 152
+    Width = 75
+    Caption = 'Calc'
+    OnClick = BtnCalcClick
+    TabOrder = 0
+  end
+  object LbNumber1: TLabel
+    Left = 24
+    Height = 15
+    Top = 32
+    Width = 56
+    Caption = 'Number 1:'
+    ParentColor = False
+    OnClick = LbNumber1Click
+  end
+  object LbNumber2: TLabel
+    Left = 24
+    Height = 15
+    Top = 64
+    Width = 56
+    Caption = 'Number 2:'
+    ParentColor = False
+  end
+  object TxtNumberOne: TEdit
+    Left = 120
+    Height = 23
+    Top = 29
+    Width = 190
+    TabOrder = 1
+  end
+  object TxtNumberTwo: TEdit
+    Left = 122
+    Height = 23
+    Top = 64
+    Width = 192
+    TabOrder = 2
+  end
+  object TxtResult: TEdit
+    Left = 24
+    Height = 23
+    Top = 109
+    Width = 288
+    TabOrder = 3
+  end
+end
