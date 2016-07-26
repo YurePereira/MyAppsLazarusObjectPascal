@@ -1,11 +1,11 @@
 object Form1: TForm1
-  Left = 277
-  Height = 332
-  Top = 158
+  Left = 366
+  Height = 391
+  Top = 117
   Width = 613
   BorderStyle = bsToolWindow
   Caption = 'Form1'
-  ClientHeight = 332
+  ClientHeight = 391
   ClientWidth = 613
   OnShow = FormShow
   LCLVersion = '1.6.0.4'
@@ -14,17 +14,17 @@ object Form1: TForm1
     Height = 304
     Top = 16
     Width = 600
-    ActivePage = TabSheet1
-    TabIndex = 0
+    ActivePage = TabSheet2
+    TabIndex = 1
     TabOrder = 0
     object TabSheet1: TTabSheet
       Caption = 'Visualizar Clientes'
       ClientHeight = 276
       ClientWidth = 592
       object DBGrid1: TDBGrid
-        Left = 0
+        Left = 7
         Height = 280
-        Top = 0
+        Top = -8
         Width = 592
         Color = clWindow
         Columns = <>
@@ -32,5 +32,161 @@ object Form1: TForm1
         TabOrder = 0
       end
     end
+    object TabSheet2: TTabSheet
+      Caption = 'Cadastrar Clientes'
+      ClientHeight = 276
+      ClientWidth = 592
+      object Label1: TLabel
+        Left = 40
+        Height = 15
+        Top = 48
+        Width = 13
+        Caption = 'Id:'
+        ParentColor = False
+      end
+      object Label2: TLabel
+        Left = 40
+        Height = 15
+        Top = 80
+        Width = 36
+        Caption = 'Nome:'
+        ParentColor = False
+      end
+      object Label3: TLabel
+        Left = 40
+        Height = 15
+        Top = 112
+        Width = 32
+        Caption = 'Idade:'
+        ParentColor = False
+      end
+      object Label4: TLabel
+        Left = 40
+        Height = 15
+        Top = 144
+        Width = 37
+        Caption = 'E-Mail:'
+        ParentColor = False
+      end
+      object Label5: TLabel
+        Left = 40
+        Height = 15
+        Top = 176
+        Width = 48
+        Caption = 'Telefone:'
+        ParentColor = False
+      end
+      object Label6: TLabel
+        Left = 40
+        Height = 15
+        Top = 208
+        Width = 40
+        Caption = 'Celular:'
+        ParentColor = False
+      end
+      object Label7: TLabel
+        Left = 40
+        Height = 15
+        Top = 240
+        Width = 52
+        Caption = 'Endereco:'
+        ParentColor = False
+      end
+      object DBEdit1: TDBEdit
+        Left = 112
+        Height = 23
+        Top = 48
+        Width = 80
+        DataField = 'ID'
+        DataSource = mdCliente.dsCliente
+        CharCase = ecNormal
+        MaxLength = 0
+        TabOrder = 0
+      end
+      object DBEdit7: TDBEdit
+        Left = 112
+        Height = 23
+        Top = 80
+        Width = 336
+        DataField = 'NOME'
+        DataSource = mdCliente.dsCliente
+        CharCase = ecNormal
+        MaxLength = 100
+        TabOrder = 1
+      end
+      object DBEdit9: TDBEdit
+        Left = 112
+        Height = 23
+        Top = 112
+        Width = 80
+        DataField = 'IDADE'
+        DataSource = mdCliente.dsCliente
+        CharCase = ecNormal
+        MaxLength = 0
+        TabOrder = 2
+      end
+      object DBEdit10: TDBEdit
+        Left = 112
+        Height = 23
+        Top = 144
+        Width = 240
+        DataField = 'EMAIL'
+        DataSource = mdCliente.dsCliente
+        CharCase = ecNormal
+        MaxLength = 50
+        TabOrder = 3
+      end
+      object DBEdit11: TDBEdit
+        Left = 112
+        Height = 23
+        Top = 176
+        Width = 176
+        DataField = 'TELEFONE'
+        DataSource = mdCliente.dsCliente
+        CharCase = ecNormal
+        MaxLength = 20
+        TabOrder = 4
+      end
+      object DBEdit12: TDBEdit
+        Left = 112
+        Height = 23
+        Top = 208
+        Width = 176
+        DataField = 'CELULAR'
+        DataSource = mdCliente.dsCliente
+        CharCase = ecNormal
+        MaxLength = 20
+        TabOrder = 5
+      end
+      object DBEdit13: TDBEdit
+        Left = 112
+        Height = 23
+        Top = 240
+        Width = 240
+        DataField = 'ID_ENDERECO'
+        DataSource = mdCliente.dsCliente
+        CharCase = ecNormal
+        MaxLength = 0
+        TabOrder = 6
+      end
+    end
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 8
+    Height = 58
+    Top = 326
+    Width = 600
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 58
+    ClientWidth = 600
+    DataSource = mdCliente.dsCliente
+    Options = []
+    TabOrder = 1
   end
 end
