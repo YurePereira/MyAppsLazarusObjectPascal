@@ -1,0 +1,30 @@
+object Form1: TForm1
+  Left = 263
+  Height = 269
+  Top = 152
+  Width = 404
+  Caption = 'Form1'
+  ClientHeight = 269
+  ClientWidth = 404
+  OnShow = FormShow
+  LCLVersion = '1.6.0.4'
+  object BtnOpen: TButton
+    Left = 16
+    Height = 25
+    Top = 200
+    Width = 128
+    Caption = 'Show Data Cliente'
+    OnClick = BtnOpenClick
+    TabOrder = 0
+  end
+  object DBGrid1: TDBGrid
+    Left = 16
+    Height = 184
+    Top = 8
+    Width = 384
+    Color = clWindow
+    Columns = <>
+    DataSource = mdCliente.dsCliente
+    TabOrder = 1
+  end
+end

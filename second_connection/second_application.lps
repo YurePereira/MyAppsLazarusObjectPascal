@@ -6,7 +6,7 @@
     <BuildModes Active="Default"/>
     <Units Count="2">
       <Unit0>
-        <Filename Value="calculating_speed.lpr"/>
+        <Filename Value="second_application.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <WindowIndex Value="-1"/>
@@ -15,14 +15,11 @@
         <UsageCount Value="20"/>
       </Unit0>
       <Unit1>
-        <Filename Value="unit_calculating_speed.pas"/>
+        <Filename Value="unit_second_application.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="FrmCalculatingSpeed"/>
-        <HasResources Value="True"/>
+        <ComponentName Value="Form1"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="25"/>
-        <CursorPos X="3" Y="39"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>

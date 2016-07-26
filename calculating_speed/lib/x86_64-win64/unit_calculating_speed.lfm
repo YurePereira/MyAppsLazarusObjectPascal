@@ -1,11 +1,12 @@
 object FrmCalculatingSpeed: TFrmCalculatingSpeed
-  Left = 262
+  Left = 384
   Height = 239
-  Top = 154
-  Width = 429
+  Top = 132
+  Width = 435
+  BorderStyle = bsDialog
   Caption = 'Calculating Speed'
   ClientHeight = 239
-  ClientWidth = 429
+  ClientWidth = 435
   LCLVersion = '1.6.0.4'
   object BtnCalc: TButton
     Left = 16

@@ -6,7 +6,7 @@
     <General>
       <SessionStorage Value="InProjectDir"/>
       <MainUnit Value="0"/>
-      <Title Value="calculating_speed"/>
+      <Title Value="second_application"/>
       <ResourceType Value="res"/>
       <UseXPManifest Value="True"/>
       <Icon Value="0"/>
@@ -35,14 +35,13 @@
     </RequiredPackages>
     <Units Count="2">
       <Unit0>
-        <Filename Value="calculating_speed.lpr"/>
+        <Filename Value="second_application.lpr"/>
         <IsPartOfProject Value="True"/>
       </Unit0>
       <Unit1>
-        <Filename Value="unit_calculating_speed.pas"/>
+        <Filename Value="unit_second_application.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="FrmCalculatingSpeed"/>
-        <HasResources Value="True"/>
+        <ComponentName Value="Form1"/>
         <ResourceBaseClass Value="Form"/>
       </Unit1>
     </Units>
@@ -51,7 +50,7 @@
     <Version Value="11"/>
     <PathDelim Value="\"/>
     <Target>
-      <Filename Value="calculating_speed"/>
+      <Filename Value="second_application"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>

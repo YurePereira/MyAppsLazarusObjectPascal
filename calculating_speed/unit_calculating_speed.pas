@@ -50,13 +50,15 @@ var
 begin
   km := StrToFloat(TxtKm.Text);
   minutes := StrToFloat(TxtMinutes.Text);
-  result := km / minutes;
+  result := (km / minutes) / 60;
   TxtaResult.Lines.Add(FloatToStr(result));
+  FrmCalculatingSpeed.Caption := 'Calculating Speed: ' + FloatToStr(result);
 end;
 
 procedure TFrmCalculatingSpeed.BtnCleanClick(Sender: TObject);
 begin
   TxtaResult.Clear;
+  FrmCalculatingSpeed.Caption := 'Calculating Speed';
 end;
 
 procedure TFrmCalculatingSpeed.BtnExitClick(Sender: TObject);

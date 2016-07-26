@@ -1,0 +1,87 @@
+object mdCliente: TmdCliente
+  OldCreateOrder = False
+  Height = 160
+  HorizontalOffset = 288
+  VerticalOffset = 156
+  Width = 321
+  object dbCliente: TIBConnection
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = 'C:\firebird_dbs\CLIENTES.FDB'
+    KeepConnection = False
+    Password = 'masterkey'
+    Transaction = trGeral
+    UserName = 'SYSDBA'
+    HostName = 'YURE'
+    Options = []
+    left = 48
+    top = 8
+  end
+  object trGeral: TSQLTransaction
+    Active = True
+    Database = dbCliente
+    Options = []
+    left = 128
+    top = 8
+  end
+  object queryClientes: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    FieldDefs = <    
+      item
+        Name = 'ID'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'NOME'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'IDADE'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'EMAIL'
+        DataType = ftString
+        Precision = -1
+        Size = 50
+      end    
+      item
+        Name = 'TELEFONE'
+        DataType = ftString
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'CELULAR'
+        DataType = ftString
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'ID_ENDERECO'
+        DataType = ftInteger
+        Precision = -1
+      end>
+    Active = True
+    AfterDelete = queryClientesAfterPost
+    AfterPost = queryClientesAfterPost
+    Database = dbCliente
+    Transaction = trGeral
+    SQL.Strings = (
+      'select * from CLIENTE'
+    )
+    Options = []
+    Params = <>
+    left = 208
+    top = 8
+  end
+  object dsCliente: TDataSource
+    DataSet = queryClientes
+    left = 48
+    top = 80
+  end
+end
